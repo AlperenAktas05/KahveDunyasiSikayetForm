@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <title>Kahve Dünyası</title>
+    <link rel="web icon" href="img/favicon.png" type="png">
+    <style>       
+        @font-face{
+          font-family: 'Gotham-Medium';
+          src: url(font/Gotham-Medium.otf);
+        }
+
+        body{
+            font-family: 'Gotham-Medium', sans-serif;                                              
+        }
+
+        .arama-yap{
+            color: #6c0c33;
+        }
+
+        .arama-yap::placeholder{
+            color: #6c0c33
+        }
+
+        .arama-yap:focus{
+            outline: none;
+        }
+
+        .resim-ustu-yazi{
+          position: relative;
+          display: inline-block;
+          overflow: hidden; 
+        }
+
+        .resim-ustu-yazi span {
+          position: absolute; 
+          top: 10%; 
+          left: 15%; 
+          width: 100%; 
+          padding: 10px; 
+          box-sizing: border-box; 
+          color: white;
+          font-size: 25px;
+        }
+    </style>         
+  </head>
+  <body>
+        <main>
+            <header class="text-center p-3" style="background-color: #f7f8f9;">
+                <a href="#" style="color: #005e5c;">500 TL VE ÜZERİ SİPARİŞLERİNİZDE KARGO BEDAVA!</a>
+            </header>
+
+            <nav class="px-5 py-3">
+                <div class="row">
+                    <div class="col-4 border rounded-pill p-2 my-5">
+                        <a href="#" class="ml-4" style="color: #6c0c33;">
+                            <input class="arama-yap border-0 outline-0" type="text" placeholder="ARAMA YAP">
+                            <span class="float-right mr-3"><i class="fa-solid fa-magnifying-glass" style="color: #6c0c33;"></i></span>
+                        </a>
+                    </div>
+                    <div class="col-4 text-center">
+                        <a href="index.html"><img src="img/favicon.png" class="w-25"></a>
+                    </div>
+                    <div class="col-4 my-5">
+                        <ul class="list-unstyled">
+                            <li class="list-inline-item mx-3"><a href="#" style="color: #6c0c33;">KURUMSAL HEDİYELER</a></li>
+                            <li class="list-inline-item mx-3"><a href="login.html" style="color: #6c0c33;">GİRİŞ</a></li>
+                            <li class="list-inline-item mx-3"><a href="#" style="color: #6c0c33;">SEPET</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-12 text-center">
+                        <ul class="list-unstyled">
+                            <li class="list-inline-item mx-3"><a href="#" style="color: #e9255d;">HEDİYE GÖNDER</a></li>
+                            <li class="list-inline-item mx-3"><a href="#" style="color: #00ccc2;">DONDURMA</a></li>
+                            <li class="list-inline-item mx-3"><a href="#" class="text-dark">KAHVE</a></li>
+                            <li class="list-inline-item mx-3"><a href="#" class="text-dark">ÇİKOLATA</a></li>
+                            <li class="list-inline-item mx-3"><a href="#" class="text-dark">AKSESUAR</a></li>
+                            <li class="list-inline-item mx-3"><a href="#" class="text-dark">PASTACILIK</a></li>
+                            <li class="list-inline-item mx-3"><a href="#" class="text-dark">KAMPANYALAR</a></li>
+                            <li class="list-inline-item mx-3"><a href="#" style="color: #005e5c;">HAKKIMIZDA</a></li>
+                        </ul>                      
+                    </div>
+                </div>
+            </nav>
+
+            <article class="px-5 mb-5">
+                <div class="row">
+                    <div class="col-12">
+                      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="img/carousel1.jpg" class="d-block w-100">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/carousel2.jpg" class="d-block w-100">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/carousel3.jpg" class="d-block w-100">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/carousel4.jpg" class="d-block w-100">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/carousel5.jpg" class="d-block w-100">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/carousel6.jpg" class="d-block w-100">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </button>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="row p-5">
+                  <div class="col-3 resim-ustu-yazi">
+                    <a href="#"><img src="img/card1.jpg" class="w-100"></a>
+                    <a href="#"><span>KAHVE</span></a>
+                  </div>
+                  <div class="col-3 resim-ustu-yazi">
+                    <a href="#"><img src="img/card2.jpg" class="w-100"></a>
+                    <a href="#"><span>ÇİKOLATA</span></a>
+                  </div>
+                  <div class="col-3 resim-ustu-yazi">
+                    <a href="#"><img src="img/card3.jpg" class="w-100"></a>
+                    <a href="#"><span>AKSESUAR</span></a>
+                  </div>
+                  <div class="col-3 resim-ustu-yazi">
+                    <a href="#"><img src="img/card4.jpg" class="w-100"></a>
+                    <a href="#"><span>FİT LEZZEETLER</span></a>
+                  </div>
+                </div>
+
+                <div class="row p-5">
+                  <div class="col-6">
+                    <a href="#"><img src="img/hediye.jpg" class="w-100"></a>
+                  </div>
+                  <div class="col-6">
+                    <a href="#"><img src="img/darussafaka.jpg" class="w-100"></a>
+                  </div>
+                </div>
+
+                <div class="row px-5 py-3">
+                  <div class="col-4 text-center p-5">
+                    <img src="img/icon1.svg" class="w-25">
+                    <h5 class="mt-3 text-dark">Daima <br> Taze</h5>
+                    <small>Ürünlerimiz direkt fabrikadan gönderilir, tedarik süreci olmadan taze taze hazırlanır.</small>
+                  </div>
+                  <div class="col-4 text-center p-5">
+                    <img src="img/icon2.svg" class="w-25">
+                    <h5 class="mt-3 text-dark">Güvenli <br> Taşıma</h5>
+                    <small>Darbeye ve ısı değişimine karşı tam korunma sağlayan özel paketler ile gönderilir.</small>
+                  </div>
+                  <div class="col-4 text-center p-5">
+                    <img src="img/icon3.svg" class="w-25">
+                    <h5 class="mt-3 text-dark">Çekirdek <br> Puan</h5>
+                    <small>Profilinize telefon numaranızı girin, siparişiniz teslim edilince Çekirdek kazanın.</small>
+                  </div>
+                </div>
+
+                <div class="row px-5 py-3">
+                  <div class="col-12 text-center">
+                    <h1 class="text-dark">Mobil uygulamamızı indirin</h1>
+                    <p class="text-dark">Mobil uygulamamıza özel kampanyalardan yararlanabilmek<br> için uygulamamızı indirin</p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6 border-right">
+                    <ul class="list-unstyled">
+                      <li class="mt-2"><a href="#"><img src="img/googleplay.png" class="w-25 float-right"></a></li><br><br><br>
+                      <li class="mt-2"><a href="#"><img src="img/appstore.png" class="w-25 float-right"></a></li><br><br><br>
+                      <li class="mt-2"><a href="#"><img src="img/appgalery.png" class="w-25 float-right"></a></li>
+                    </ul>
+                  </div>
+                  <div class="col-6 my-auto">
+                    <img src="img/qr.svg" class="w-25">
+                  </div>
+                </div>
+            </article>
+
+            <footer class="mt-5 px-5" style="background-color: #6c0c33;">
+              <div class="row p-5">
+                <div class="col-8">
+                  <div class="row">
+                    <div class="col-3">
+                      <ul class="list-unstyled">
+                        <li class="list-inline-item"><b class="text-light">KAHVE</b></li><br>
+                        <li class="list-inline-item"><a href="#" class="text-light">Türk Kahvesi</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-light">Filtre Kahve</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-light">Yöresel Kahve</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-light">Espresso</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-light">Hazır Kahveler</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-light">Salep ve Sıcak Çikolata</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-light">Şuruplar</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-3">
+                      <ul class="list-unstyled">
+                        <li class="list-inline-item"><b class="text-light">ÇİKOLATA</b></li>
+                        <li class="list-inline-item"><a href="#" class="text-light">Kutu Çikolata</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-light">Atıştırmalık Çikolata</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-light">El Yapımı Ürünler</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-light">Çikolata Kaplılar</a></li><br>
+                      </ul>
+                    </div>
+                    <div class="col-3">
+                      <ul class="list-unstyled">
+                        <li class="list-inline-item"><b class="text-light">HAKKIMIZDA</b></li>
+                        <li class="list-inline-item"><a href="#" class="text-light">Hikayemiz</a></li><br>
+                        <li class="list-inline-item"><a href="#" class="text-light">Üretim</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-light">Kurumsal Çözümler</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-light">Kariyer</a></li><br>
+                        <li class="list-inline-item"><a href="#" class="text-light">Atölye</a></li><br>
+                        <li class="list-inline-item"><a href="#" class="text-light">Tüm Mağazalar</a></li><br>
+                        <li class="list-inline-item"><a href="#" class="text-light">Blog</a></li><br>
+                        <li class="list-inline-item"><a href="#" class="text-light">Etik Kurallarımız</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-light">Değerlerimiz</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-light">Sertifikalarımız</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-3">
+                        <ul class="list-unstyled">
+                          <li class="list-inline-item"><b class="text-light">YARDIM</b></li><br>
+                          <li class="list-inline-item"><a href="#" class="text-light">Üyelik</a></li><br>
+                          <li class="list-inline-item"><a href="#" class="text-light">Sipariş İşlemleri</a></li>
+                          <li class="list-inline-item"><a href="#" class="text-light">Ödeme İşlemleri</a></li>
+                          <li class="list-inline-item"><a href="#" class="text-light">Teslimat Süreci</a></li><br>
+                          <li class="list-inline-item"><a href="#" class="text-light">İade İşlemleri</a></li>
+                          <li class="list-inline-item"><a href="#" class="text-light">Ürün Gamı</a></li>
+                          <li class="list-inline-item"><a href="#" class="text-light">Teknik Konular</a></li>
+                          <li class="list-inline-item"><a href="#" class="text-light">İletişim</a></li><br>
+                          <li class="list-inline-item"><a href="#" class="text-light">İletişim Formu</a></li>
+                          <li class="list-inline-item"><a href="#" class="text-light">Bilgi Toplumu Hizmetleri</a></li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 my-auto p-4" style="border-style: solid; border-width: 3px; border-color: white;">
+                  <p class="text-light">Bize Yazın</p>
+                  <h4 class="text-light">Öneri ve şikayetleriniz<br> için mesaj bırakın</h4>
+                  <!-- Button -->
+                  <button type="button" class="btn btn-warning mt-2 rounded-0" data-toggle="modal" data-target="#exampleModal">Mesaj Yaz</button>
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content rounded-0">
+                        <div class="modal-header px-5">
+                          <h5 class="modal-title" id="exampleModalLabel">Mesaj Yaz</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body p-5">
+                          <div class="input-group mb-3">
+                            <select class="custom-select rounded-0 formCategory" id="inputGroupSelect01">
+                              <option selected>Kategori</option>
+                              <option>Şikayet</option>
+                              <option>Talep</option>
+                              <option>Bilgi</option>
+                              <option>Teşekkür</option>
+                            </select>
+                          </div>
+
+                          <div class="input-group mb-3">
+                            <select class="custom-select rounded-0 formTopic" id="inputGroupSelect01">
+                              <option selected>Konu</option>
+                              <option>Online Satış İşlemleri</option>
+                              <option>Mağaza İşlemleri</option>
+                              <option>Toplu Satış</option>
+                              <option>Sponsorluk ve Etkinlik İşlemleri</option>
+                              <option>Kiralık Mağaza Talepleri</option>
+                              <option>İnsan Kaynakları</option>
+                            </select>
+                          </div>
+
+                          <div class="input-group mb-3">
+                            <select class="custom-select rounded-0 formCity" id="inputGroupSelect01">
+                              <option selected>Şehir</option>
+                              <option>Adana</option>
+                              <option>Adıyaman</option>
+                              <option>Afyonkarahisar</option>
+                              <option>Ağrı</option>
+                              <option>Aksaray</option>
+                              <option>Amasya</option>
+                              <option>Ankara</option>
+                              <option>Antalya</option>
+                              <option>Ardahan</option>
+                              <option>Artvin</option>
+                              <option>Aydın</option>
+                              <option>Balıkesir</option>
+                              <option>Bartın</option>
+                              <option>Batman</option>
+                              <option>Bayburt</option>
+                              <option>Bilecik</option>
+                              <option>Bingöl</option>
+                              <option>Bitlis</option>
+                              <option>Bolu</option>
+                              <option>Burdur</option>
+                              <option>Bursa</option>
+                              <option>Çanakkale</option>
+                              <option>Çankırı</option>
+                              <option>Çorum</option>
+                              <option>Denizli</option>
+                              <option>Diyarbakır</option>
+                              <option>Düzce</option>
+                              <option>Edirne</option>
+                              <option>Elazığ</option>
+                              <option>Erzincan</option>
+                              <option>Erzurum</option>
+                              <option>Eskişehir</option>
+                              <option>Gaziantep</option>
+                              <option>Giresun</option>
+                              <option>Gümüşhane</option>
+                              <option>Hakkari</option>
+                              <option>Hatay</option>
+                              <option>Iğdır</option>
+                              <option>Isparta</option>
+                              <option>İstanbul</option>
+                              <option>İzmir</option>
+                              <option>Kahramanmaraş</option>
+                              <option>Karabük</option>
+                              <option>Karaman</option>
+                              <option>Kars</option>
+                              <option>Kastamonu</option>
+                              <option>Kayseri</option>
+                              <option>Kırıkkale</option>
+                              <option>Kırklareli</option>
+                              <option>Kırşehir</option>
+                              <option>Kilis</option>
+                              <option>Kocaeli</option>
+                              <option>Konya</option>
+                              <option>Kütahya</option>
+                              <option>Malatya</option>
+                              <option>Manisa</option>
+                              <option>Mardin</option>
+                              <option>Mersin</option>
+                              <option>Muğla</option>
+                              <option>Muş</option>
+                              <option>Nevşehir</option>
+                              <option>Niğde</option>
+                              <option>Ordu</option>
+                              <option>Osmaniye</option>
+                              <option>Rize</option>
+                              <option>Sakarya</option>
+                              <option>Samsun</option>
+                              <option>Siirt</option>
+                              <option>Sinop</option>
+                              <option>Sivas</option>
+                              <option>Şanlıurfa</option>
+                              <option>Şırnak</option>
+                              <option>Tekirdağ</option>
+                              <option>Tokat</option>
+                              <option>Trabzon</option>
+                              <option>Tunceli</option>
+                              <option>Uşak</option>
+                              <option>Van</option>
+                              <option>Yalova</option>
+                              <option>Yozgat</option>
+                              <option>Zonguldak</option>
+                            </select>
+                          </div>
+
+                          <div class="input-group mb-3">
+                            <input type="text" class="form-control rounded-0 formName" placeholder="Ad Soyad" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" autocomplete="off">
+                          </div>
+
+                          <div class="input-group mb-3">
+                            <input type="text" class="form-control rounded-0 formEmail" placeholder="Email" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" autocomplete="off">
+                          </div>
+
+                          <div class="input-group mb-3">
+                            <input type="text" class="form-control rounded-0 formPhone" placeholder="Telefon" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" autocomplete="off">
+                          </div>
+
+                          <div class="input-group mb-3">
+                            <textarea class="p-2 formTextarea" cols="75" rows="5" placeholder="Mesajınızı Yazınız"></textarea>
+                          </div>
+
+                          <small>Talep ve soruların karşılanması ve taahhüt ettiğimiz hizmetin sunulabilmesi kapsamında tarafınızla iletişime geçmek amacıyla kişisel verileriniz Veri sorumlusu sıfatıyla Altınkılıçlar Kahve Kakao Ürünleri Ticaret ve Sanayi A.Ş. (Kahve Dünyası) tarafından işlenecektir. 6698 sayılı Kişisel Verilerin Korunması Kanunu kapsamında kişisel verilerinizin işlenmesinden doğan haklarınıza ve bu konudaki detaylı bilgiye “Sözleşmeler” başlığında yer alan <a href="#" style="color: #00ccc2;">KVKK Aydınlatma Metni</a> adlı aydınlatma metnimizden ulaşabilirsiniz.</small>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn rounded-0 text-light submitButton" style="background-color: #005e5c;">Gönder</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </footer>
+        </main>
+
+    <!-- Javascript -->
+    <script src="form.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/e562692f21.js" crossorigin="anonymous"></script>
+  </body>
+</html>

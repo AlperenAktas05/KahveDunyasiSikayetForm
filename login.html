@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <title>Giriş Yap | Kahve Dünyası</title>
+    <link rel="web icon" href="img/favicon.png" type="png">
+    <style>       
+        @font-face{
+          font-family: 'Gotham-Medium';
+          src: url(font/Gotham-Medium.otf);
+        }
+
+        body{
+            font-family: 'Gotham-Medium', sans-serif;                                              
+        }
+
+        .arama-yap{
+            color: #6c0c33;
+        }
+
+        .arama-yap::placeholder{
+            color: #6c0c33
+        }
+
+        .arama-yap:focus{
+            outline: none;
+        }
+
+        .resim-ustu-yazi{
+          position: relative;
+          display: inline-block;
+          overflow: hidden; 
+        }
+
+        .resim-ustu-yazi span {
+          position: absolute; 
+          top: 10%; 
+          left: 15%; 
+          width: 100%; 
+          padding: 10px; 
+          box-sizing: border-box; 
+          color: white;
+          font-size: 25px;
+        }
+    </style>         
+  </head>
+  <body>
+        <main>
+            <header class="text-center p-3" style="background-color: #f7f8f9;">
+                <a href="#" style="color: #005e5c;">500 TL VE ÜZERİ SİPARİŞLERİNİZDE KARGO BEDAVA!</a>
+            </header>
+
+            <nav class="px-5 py-3">
+                <div class="row">
+                    <div class="col-4 border rounded-pill p-2 my-5">
+                        <a href="#" class="ml-4" style="color: #6c0c33;">
+                            <input class="arama-yap border-0 outline-0" type="text" placeholder="ARAMA YAP">
+                            <span class="float-right mr-3"><i class="fa-solid fa-magnifying-glass" style="color: #6c0c33;"></i></span>
+                        </a>
+                    </div>
+                    <div class="col-4 text-center">
+                        <a href="index.html"><img src="img/favicon.png" class="w-25"></a>
+                    </div>
+                    <div class="col-4 my-5">
+                        <ul class="list-unstyled">
+                            <li class="list-inline-item mx-3"><a href="#" style="color: #6c0c33;">KURUMSAL HEDİYELER</a></li>
+                            <li class="list-inline-item mx-3"><a href="#" style="color: #6c0c33;">GİRİŞ</a></li>
+                            <li class="list-inline-item mx-3"><a href="#" style="color: #6c0c33;">SEPET</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-12 text-center">
+                        <ul class="list-unstyled">
+                            <li class="list-inline-item mx-3"><a href="#" style="color: #e9255d;">HEDİYE GÖNDER</a></li>
+                            <li class="list-inline-item mx-3"><a href="#" style="color: #00ccc2;">DONDURMA</a></li>
+                            <li class="list-inline-item mx-3"><a href="#" class="text-dark">KAHVE</a></li>
+                            <li class="list-inline-item mx-3"><a href="#" class="text-dark">ÇİKOLATA</a></li>
+                            <li class="list-inline-item mx-3"><a href="#" class="text-dark">AKSESUAR</a></li>
+                            <li class="list-inline-item mx-3"><a href="#" class="text-dark">PASTACILIK</a></li>
+                            <li class="list-inline-item mx-3"><a href="#" class="text-dark">KAMPANYALAR</a></li>
+                            <li class="list-inline-item mx-3"><a href="#" style="color: #005e5c;">HAKKIMIZDA</a></li>
+                        </ul>                      
+                    </div>
+                </div>
+            </nav>
+
+            <article class="p-5" style="background-image: url(img/loginBg-2.jpg);">
+                <div class="row p-5">
+                    <div class="offset-4 col-4 bg-light p-5">
+                        <h1 class="mb-5">Üye Girişi</h1>
+
+                        <div class="input-group input-group-lg mt-3">
+                            <input type="email" class="form-control rounded-0 email" placeholder="E-Posta" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" autocomplete="off">
+                        </div>
+
+                        <div class="input-group input-group-lg my-3">
+                            <input type="password" class="form-control rounded-0 password" placeholder="Parola" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" autocomplete="off">
+                        </div>
+
+                        <a href="#"><small style="color: #3596b5;">Parolanızı mı unuttunuz?</small></a><br>
+
+                        <div class="text-center mt-3">
+                            <button type="button" class="btn rounded-0 text-light mt-3 px-5 py-3 text-center loginButton" style="background-color: #005e5c;">Giriş Yap</button>
+                        </div>
+
+                        <p class="text-center mt-3">Hesabınız yok mu?<a href="#" style="color: #3596b5;"> Kayıt Ol</a></p>
+                    </div>
+                </div>
+            </article>
+
+            <footer class="px-5" style="background-color: #6c0c33;">
+                <div class="row p-5">
+                  <div class="col-8">
+                    <div class="row">
+                      <div class="col-3">
+                        <ul class="list-unstyled">
+                          <li class="list-inline-item"><b class="text-light">KAHVE</b></li><br>
+                          <li class="list-inline-item"><a href="#" class="text-light">Türk Kahvesi</a></li>
+                          <li class="list-inline-item"><a href="#" class="text-light">Filtre Kahve</a></li>
+                          <li class="list-inline-item"><a href="#" class="text-light">Yöresel Kahve</a></li>
+                          <li class="list-inline-item"><a href="#" class="text-light">Espresso</a></li>
+                          <li class="list-inline-item"><a href="#" class="text-light">Hazır Kahveler</a></li>
+                          <li class="list-inline-item"><a href="#" class="text-light">Salep ve Sıcak Çikolata</a></li>
+                          <li class="list-inline-item"><a href="#" class="text-light">Şuruplar</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-3">
+                        <ul class="list-unstyled">
+                          <li class="list-inline-item"><b class="text-light">ÇİKOLATA</b></li>
+                          <li class="list-inline-item"><a href="#" class="text-light">Kutu Çikolata</a></li>
+                          <li class="list-inline-item"><a href="#" class="text-light">Atıştırmalık Çikolata</a></li>
+                          <li class="list-inline-item"><a href="#" class="text-light">El Yapımı Ürünler</a></li>
+                          <li class="list-inline-item"><a href="#" class="text-light">Çikolata Kaplılar</a></li><br>
+                        </ul>
+                      </div>
+                      <div class="col-3">
+                        <ul class="list-unstyled">
+                          <li class="list-inline-item"><b class="text-light">HAKKIMIZDA</b></li>
+                          <li class="list-inline-item"><a href="#" class="text-light">Hikayemiz</a></li><br>
+                          <li class="list-inline-item"><a href="#" class="text-light">Üretim</a></li>
+                          <li class="list-inline-item"><a href="#" class="text-light">Kurumsal Çözümler</a></li>
+                          <li class="list-inline-item"><a href="#" class="text-light">Kariyer</a></li><br>
+                          <li class="list-inline-item"><a href="#" class="text-light">Atölye</a></li><br>
+                          <li class="list-inline-item"><a href="#" class="text-light">Tüm Mağazalar</a></li><br>
+                          <li class="list-inline-item"><a href="#" class="text-light">Blog</a></li><br>
+                          <li class="list-inline-item"><a href="#" class="text-light">Etik Kurallarımız</a></li>
+                          <li class="list-inline-item"><a href="#" class="text-light">Değerlerimiz</a></li>
+                          <li class="list-inline-item"><a href="#" class="text-light">Sertifikalarımız</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-3">
+                          <ul class="list-unstyled">
+                            <li class="list-inline-item"><b class="text-light">YARDIM</b></li><br>
+                            <li class="list-inline-item"><a href="#" class="text-light">Üyelik</a></li><br>
+                            <li class="list-inline-item"><a href="#" class="text-light">Sipariş İşlemleri</a></li>
+                            <li class="list-inline-item"><a href="#" class="text-light">Ödeme İşlemleri</a></li>
+                            <li class="list-inline-item"><a href="#" class="text-light">Teslimat Süreci</a></li><br>
+                            <li class="list-inline-item"><a href="#" class="text-light">İade İşlemleri</a></li>
+                            <li class="list-inline-item"><a href="#" class="text-light">Ürün Gamı</a></li>
+                            <li class="list-inline-item"><a href="#" class="text-light">Teknik Konular</a></li>
+                            <li class="list-inline-item"><a href="#" class="text-light">İletişim</a></li><br>
+                            <li class="list-inline-item"><a href="#" class="text-light">İletişim Formu</a></li>
+                            <li class="list-inline-item"><a href="#" class="text-light">Bilgi Toplumu Hizmetleri</a></li>
+                          </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4 my-auto p-4" style="border-style: solid; border-width: 3px; border-color: white;">
+                    <p class="text-light">Bize Yazın</p>
+                    <h4 class="text-light">Öneri ve şikayetleriniz<br> için mesaj bırakın</h4>
+                    <!-- Button -->
+                    <button type="button" class="btn btn-warning mt-2 rounded-0" data-toggle="modal" data-target="#exampleModal">Mesaj Yaz</button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-lg">
+                        <div class="modal-content rounded-0">
+                          <div class="modal-header px-5">
+                            <h5 class="modal-title" id="exampleModalLabel">Mesaj Yaz</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body p-5">
+                            <div class="input-group mb-3">
+                              <select class="custom-select rounded-0" id="inputGroupSelect01">
+                                <option selected>Kategori</option>
+                                <option value="1">Şikayet</option>
+                                <option value="2">Talep</option>
+                                <option value="3">Bilgi</option>
+                                <option value="4">Teşekkür</option>
+                              </select>
+                            </div>
+  
+                            <div class="input-group mb-3">
+                              <select class="custom-select rounded-0" id="inputGroupSelect01">
+                                <option selected>Konu</option>
+                                <option value="1">Online Satış İşlemleri</option>
+                                <option value="2">Mağaza İşlemleri</option>
+                                <option value="3">Toplu Satış</option>
+                                <option value="4">Sponsorluk ve Etkinlik İşlemleri</option>
+                                <option value="5">Kiralık Mağaza Talepleri</option>
+                                <option value="6">İnsan Kaynakları</option>
+                              </select>
+                            </div>
+  
+                            <div class="input-group mb-3">
+                              <select class="custom-select rounded-0" id="inputGroupSelect01">
+                                <option selected>Şehir</option>
+                                <option value="1">Adana</option>
+                                <option value="2">Adıyaman</option>
+                                <option value="3">Afyonkarahisar</option>
+                                <option value="4">Ağrı</option>
+                                <option value="5">Aksaray</option>
+                                <option value="6">Amasya</option>
+                                <option value="7">Ankara</option>
+                                <option value="8">Antalya</option>
+                                <option value="9">Ardahan</option>
+                                <option value="10">Artvin</option>
+                                <option value="11">Aydın</option>
+                                <option value="12">Balıkesir</option>
+                                <option value="13">Bartın</option>
+                                <option value="14">Batman</option>
+                                <option value="15">Bayburt</option>
+                                <option value="16">Bilecik</option>
+                                <option value="17">Bingöl</option>
+                                <option value="18">Bitlis</option>
+                                <option value="19">Bolu</option>
+                                <option value="20">Burdur</option>
+                                <option value="21">Bursa</option>
+                                <option value="22">Çanakkale</option>
+                                <option value="23">Çankırı</option>
+                                <option value="24">Çorum</option>
+                                <option value="25">Denizli</option>
+                                <option value="26">Diyarbakır</option>
+                                <option value="27">Düzce</option>
+                                <option value="28">Edirne</option>
+                                <option value="29">Elazığ</option>
+                                <option value="30">Erzincan</option>
+                                <option value="31">Erzurum</option>
+                                <option value="32">Eskişehir</option>
+                                <option value="33">Gaziantep</option>
+                                <option value="34">Giresun</option>
+                                <option value="35">Gümüşhane</option>
+                                <option value="36">Hakkari</option>
+                                <option value="37">Hatay</option>
+                                <option value="38">Iğdır</option>
+                                <option value="39">Isparta</option>
+                                <option value="40">İstanbul</option>
+                                <option value="41">İzmir</option>
+                                <option value="42">Kahramanmaraş</option>
+                                <option value="43">Karabük</option>
+                                <option value="44">Karaman</option>
+                                <option value="45">Kars</option>
+                                <option value="46">Kastamonu</option>
+                                <option value="47">Kayseri</option>
+                                <option value="48">Kırıkkale</option>
+                                <option value="49">Kırklareli</option>
+                                <option value="50">Kırşehir</option>
+                                <option value="51">Kilis</option>
+                                <option value="52">Kocaeli</option>
+                                <option value="53">Konya</option>
+                                <option value="54">Kütahya</option>
+                                <option value="55">Malatya</option>
+                                <option value="56">Manisa</option>
+                                <option value="57">Mardin</option>
+                                <option value="58">Mersin</option>
+                                <option value="59">Muğla</option>
+                                <option value="60">Muş</option>
+                                <option value="61">Nevşehir</option>
+                                <option value="62">Niğde</option>
+                                <option value="63">Ordu</option>
+                                <option value="64">Osmaniye</option>
+                                <option value="65">Rize</option>
+                                <option value="66">Sakarya</option>
+                                <option value="67">Samsun</option>
+                                <option value="68">Siirt</option>
+                                <option value="69">Sinop</option>
+                                <option value="70">Sivas</option>
+                                <option value="71">Şanlıurfa</option>
+                                <option value="72">Şırnak</option>
+                                <option value="73">Tekirdağ</option>
+                                <option value="74">Tokat</option>
+                                <option value="75">Trabzon</option>
+                                <option value="76">Tunceli</option>
+                                <option value="77">Uşak</option>
+                                <option value="78">Van</option>
+                                <option value="79">Yalova</option>
+                                <option value="80">Yozgat</option>
+                                <option value="81">Zonguldak</option>
+                              </select>
+                            </div>
+  
+                            <div class="input-group mb-3">
+                              <input type="text" class="form-control rounded-0" placeholder="Ad Soyad" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" autocomplete="off">
+                            </div>
+  
+                            <div class="input-group mb-3">
+                              <input type="text" class="form-control rounded-0" placeholder="Email" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" autocomplete="off">
+                            </div>
+  
+                            <div class="input-group mb-3">
+                              <input type="text" class="form-control rounded-0" placeholder="Telefon" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" autocomplete="off">
+                            </div>
+  
+                            <div class="input-group mb-3">
+                              <textarea class="p-2" cols="75" rows="5" placeholder="Mesajınızı Yazınız"></textarea>
+                            </div>
+  
+                            <small>Talep ve soruların karşılanması ve taahhüt ettiğimiz hizmetin sunulabilmesi kapsamında tarafınızla iletişime geçmek amacıyla kişisel verileriniz Veri sorumlusu sıfatıyla Altınkılıçlar Kahve Kakao Ürünleri Ticaret ve Sanayi A.Ş. (Kahve Dünyası) tarafından işlenecektir. 6698 sayılı Kişisel Verilerin Korunması Kanunu kapsamında kişisel verilerinizin işlenmesinden doğan haklarınıza ve bu konudaki detaylı bilgiye “Sözleşmeler” başlığında yer alan <a href="#" style="color: #00ccc2;">KVKK Aydınlatma Metni</a> adlı aydınlatma metnimizden ulaşabilirsiniz.</small>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn rounded-0 text-light" style="background-color: #005e5c;">Gönder</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </footer>
+        </main>
+
+    <!-- Javascript -->
+    <script src="form.js"></script>
+    <script src="login.js"></script>
+    
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/e562692f21.js" crossorigin="anonymous"></script>
+  </body>
+</html>
